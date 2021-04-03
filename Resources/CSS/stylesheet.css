@@ -4,6 +4,7 @@
   font-size: 16px;
   color: black;
   background-color: white;
+  margin: 0;
 }
 
 /* header CSS*/
@@ -14,8 +15,8 @@ header {
   position: fixed;
   height: 64px;
   width: 100%;
-  margin-top: 0;
-  border-bottom: 1px solid black;
+  margin: 0;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -54,23 +55,24 @@ header {
 }
 
 /* banner CSS */
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
 #banner {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
+  position: relative;
   top: 64px;
   width: 100%;
   background-color: lightgray;
 }
 
-#photocontainer {
+#banner img {
   width: 60%;
-  height: 440px;
-  background-image: url("../Images/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 24px;
+  margin: 32px 0 32px 24px;
 }
 
 #bannertext {
@@ -107,4 +109,26 @@ header {
   text-align: center;
   color: white;
   background-color: #4a4a4a;
+}
+
+/*Info section*/
+
+#main {
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+}
+
+#practice {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  top: 100px;
+}
+
+#smallsets {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  top: 100px;
 }
