@@ -1,0 +1,51 @@
+/* header CSS*/
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: white;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  margin-top: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  flex: 0 1 100%;
+  margin-left: 10px;
+}
+
+#logo span {
+  color: black;
+  text-transform: uppercase;
+}
+
+#calogo {
+  align-self: flex-start;
+  height: 50px;
+}
+
+#nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+  flex: 0 1 100%;
+}
+
+#nav a {
+  color: black;
+  text-decoration: underline;
+}
