@@ -1,11 +1,13 @@
+/*general CSS*/
+* {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
 /* header CSS*/
 body {
-  font-family: Helvetica;
-  font-size: 22px;
-  color: seashell;
-  background-color: white;
-  opacity: 0.9;
-  text-align: center;
 }
 
 header {
@@ -13,7 +15,6 @@ header {
   height: 64px;
   width: 100%;
   margin-top: 0;
-  background-color: white;
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;
@@ -27,14 +28,15 @@ header {
   margin: 0 24px;
 }
 
-#logo span {
-  color: black;
-  text-transform: uppercase;
-}
-
 #calogo {
   align-self: flex-start;
   height: 50px;
+}
+
+#logo span {
+  color: black;
+  text-transform: uppercase;
+  line-height: 32px;
 }
 
 #nav {
@@ -49,4 +51,60 @@ header {
   color: black;
   text-decoration: underline;
   margin-right: 16px;
+}
+
+/* banner CSS */
+#banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+#photocontainer {
+  width: 60%;
+  height: 440px;
+  background-image: url("../Images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 24px;
+}
+
+#bannertext {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  background-color: lightgray;
+}
+
+#bannertext h1 {
+  color: #4a4a4a;
+  background-color: lightgray;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#bannertext h2 {
+  color: #4a4a4a;
+  background-color: lightgray;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#bannertext .button {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  background-color: #4a4a4a;
+  justify-content: center;
+  align-items: center;
+}
+
+.button span {
+  text-align: center;
+  color: white;
+  background-color: #4a4a4a;
 }
