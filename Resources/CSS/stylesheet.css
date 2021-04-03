@@ -10,7 +10,7 @@ body {
 
 header {
   position: fixed;
-  height: 69px;
+  height: 64px;
   width: 100%;
   margin-top: 0;
   background-color: white;
@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   flex: 0 1 100%;
-  margin-left: 10px;
+  margin: 0 24px;
 }
 
 #logo span {
@@ -48,4 +48,5 @@ header {
 #nav a {
   color: black;
   text-decoration: underline;
+  margin-right: 16px;
 }
