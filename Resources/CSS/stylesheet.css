@@ -1,25 +1,23 @@
-/*general CSS*/
-* {
+/*root CSS*/
+html {
   font-family: Helvetica;
-  font-size: 16px;
   color: black;
-  background-color: white;
-  margin: 0;
 }
 
 /* header CSS*/
 body {
+  margin: 0;
 }
 
 header {
   position: fixed;
   height: 64px;
   width: 100%;
-  margin: 0;
-  border: 1px solid black;
+  margin-top: 0;
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
+  background-color: white;
 }
 
 #logo {
@@ -115,20 +113,92 @@ header {
 
 #main {
   width: 100%;
-  height: 500px;
-  background-color: blue;
 }
 
 #practice {
-  display: inline-flex;
+  display: flex;
   position: relative;
+  align-items: flex-start;
+  margin: 24px 0 32px 24px;
+  top: 40px;
+}
+
+.bigpic {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  top: 100px;
+}
+
+.bigpic img {
+  max-width: 100%;
+  object-fit: contain;
+  margin: 32px 24px;
+}
+
+.bigpic h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.bigpic h2 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.bigpic h3 {
+  font-size: 0.751rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  align-self: flex-start;
 }
 
 #smallsets {
   display: inline-flex;
   position: relative;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.smallcontainer {
+  display: flex;
   align-items: center;
-  top: 100px;
+  max-width: 100%;
+}
+
+.smallpic {
+  display: inline;
+  max-width: 35%;
+  margin: 16px 16px;
+}
+
+.smallpic img {
+  display: inline;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.smallpictext {
+  display: inline;
+  max-width: 65%;
+}
+
+.smallpictext h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.smallpictext h3 {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+#keynote {
+  background-color: lightgray;
 }
