@@ -1,31 +1,60 @@
 /*root CSS*/
 html {
-  font-family: Helvetica;
+  font-family: "Kumbh Sans",sans-serif;
   color: black;
+  font-weight: 400;
+  background-color: lightblue;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  float: none;
+  width: 100%;
+  max-width: 100rem;
+}
+
+h1 {
+  color: #4a4a4a;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+h4 {
+  color: #4a4a4a;
+  font-size: .75rem;
+  font-weight: 200;
 }
 
 /* header CSS*/
-body {
-  max-width: 75%;
-  margin: 0;
-}
-
 header {
   position: fixed;
-  height: 64px;
+  height: 4rem;
   width: 100%;
+  max-width: 100rem;
   margin-top: 0;
   display: flex;
   align-items: center;
   z-index: 10;
   background-color: white;
+  font-family: Roboto;
 }
 
 #logo {
   display: flex;
   align-items: center;
   flex: 0 1 100%;
-  margin: 0 24px;
+  margin: 0 1.5rem;
 }
 
 #calogo {
@@ -49,8 +78,12 @@ header {
 
 #nav a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   margin-right: 16px;
+}
+
+#main {
+  width: 100%;
 }
 
 /* banner CSS */
@@ -65,12 +98,18 @@ header {
   align-items: center;
   position: relative;
   top: 64px;
-  width: 100%;
+  max-width: 100%;
   background-color: lightgray;
 }
 
-#banner img {
+.largepic {
   width: 60%;
+  overflow: hidden;
+}
+
+.largepic img {
+  max-width: 100%;
+  height: auto;
   margin: 32px 0 32px 24px;
 }
 
@@ -79,20 +118,24 @@ header {
   flex-direction: column;
   padding-left: 32px;
   background-color: lightgray;
+  width: 35%;
 }
 
 #bannertext h1 {
   color: #4a4a4a;
   background-color: lightgray;
-  font-size: 40px;
-  font-weight: 900;
+  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 #bannertext h2 {
   color: #4a4a4a;
   background-color: lightgray;
-  font-size: 24px;
   font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 #bannertext .button {
@@ -112,45 +155,43 @@ header {
 
 /*Info section*/
 
-#main {
-  width: 100%;
-}
-
 #practice {
   display: flex;
-  position: relative;
   align-items: flex-start;
-  margin: 24px 0 32px 24px;
-  top: 40px;
+  position: relative;
+  top: 64px;
+  margin: 0;
+  /*margin: 24px 0 32px 0px;
+  top: 40px;*/
+  background-color: white;
+  z-index: 20;
 }
 
 .bigpic {
   width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin: 32px 24px;
 }
 
 .bigpic img {
   max-width: 100%;
-  object-fit: contain;
-  margin: 32px 24px;
+  height: auto;
+  display: block;
 }
 
 .bigpic h1 {
-  font-size: 2.5rem;
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .bigpic h2 {
-  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
 .bigpic h3 {
-  font-size: 0.751rem;
   margin-top: 0;
   margin-bottom: 2rem;
   align-self: flex-start;
@@ -169,13 +210,13 @@ header {
 .smallcontainer {
   display: flex;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .smallpic {
   display: inline;
-  width: 35%;
-  margin: 16px 16px;
+  max-width: 35%;
+  margin: 1rem 1rem;
 }
 
 .smallpic img {
@@ -186,27 +227,22 @@ header {
 
 .smallpictext {
   display: inline;
-  max-width: 65%;
+  max-width: 50%;
 }
 
 .smallpictext h2 {
-  font-size: 1rem;
   margin: 0;
 }
 
 .smallpictext h3 {
-  font-size: 0.75rem;
-  margin-top: 0.5rem;
   margin-bottom: 0;
-}
-
-#keynote {
-  background-color: #d8d8d8;
 }
 
 /*Start Learning Section*/
 
 #startLearning {
+  position: relative;
+  top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,40 +250,70 @@ header {
 }
 
 #startLearning h1 {
+  position: relative;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #courses {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
-  margin: 1rem 4.5rem 2rem 4.5rem;
+  margin: 0 4.5rem;
 }
 
 .courseDescription {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 1rem;
+  width: 30%;
+  margin: 0 1rem 2rem 1rem;
+  background-color: white;
+}
+
+.courseDescription h2 h3 {
+
 }
 
 .courseDescription img {
-  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .courseDescription h2 {
-  font-size: 1rem;
+
 }
 
 .courseDescription h3 {
-  font-size: 0.75rem;
+
+}
+
+.courseText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.courseText h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: red;
+}
+
+.courseText h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: red;
 }
 
 /*Thesis section*/
 #thesis {
+  position: relative;
+  top: 64px;
   display: flex;
+  background-color: white;
 }
 
 #videocontainer {
@@ -256,7 +322,6 @@ header {
   align-items: center;
   width: 65%;
   overflow: hidden;
-  border: 1px solid blue;
 }
 
 video {
