@@ -159,12 +159,9 @@ header {
   display: flex;
   align-items: flex-start;
   position: relative;
-  top: 64px;
+  top: 4rem;
   margin: 0;
-  /*margin: 24px 0 32px 0px;
-  top: 40px;*/
   background-color: white;
-  z-index: 20;
 }
 
 .bigpic {
@@ -204,7 +201,7 @@ header {
   flex-direction: column;
   width: 40%;
   height: auto;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .smallcontainer {
@@ -278,7 +275,6 @@ header {
 .courseDescription img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 1rem;
 }
 
 .courseDescription h2 {
@@ -297,31 +293,43 @@ header {
 }
 
 .courseText h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: red;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .courseText h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: red;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.bottomText {
+  color: green;
+  margin-bottom: 1.5rem;
 }
 
 /*Thesis section*/
 #thesis {
   position: relative;
-  top: 64px;
+  top: 4rem;
   display: flex;
+  flex-direction: column;
   background-color: white;
 }
 
-#videocontainer {
+#thesis h1 {
+  text-align: center;
+}
+
+#thesisBody {
   display: flex;
+}
+
+#videocontainer {
+  margin: 0 1.5rem 2rem 1.5rem;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  width: 65%;
-  overflow: hidden;
+  width: 60%;
 }
 
 video {
