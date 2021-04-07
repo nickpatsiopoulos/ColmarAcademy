@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -26,6 +28,10 @@
 
     <div id="main">
 
+
+
+<!--Banner section-->
+
       <div id="banner">
         <div class="largepic">
           <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\banner.jpg">
@@ -40,6 +46,8 @@
       </div>
 
 
+<!--Practice section-->
+
       <div id="practice">
 
         <div class="bigpic">
@@ -52,7 +60,6 @@
         </div>
 
         <div class="smallsets">
-
           <div class="smallcontainer">
               <div class="smallpic">
                 <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\information-orientation.jpg">
@@ -60,10 +67,9 @@
               <div class="smallpictext">
                 <h2>Orientation date</h2>
                 <h3>Tue 10/11 & Wed 10/12: 8am-3pm</h3>
-                <h3><a href="#">Read more</a></h3>
+                <h3 class="nopadding"><a href="#">Read more</a></h3>
               </div>
           </div>
-
           <div class="smallcontainer">
             <div class="smallpic">
               <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\information-campus.jpg">
@@ -71,89 +77,83 @@
             <div class="smallpictext">
               <h2>Our campus</h2>
               <h3>Find out which campus is close by you</h3>
-              <h3><a href="#">Read more</a></h3>
+              <h3 class="nopadding"><a href="#">Read more</a></h3>
             </div>
           </div>
-
-        <div id="gray1" class="smallcontainer">
+        <div class="smallcontainer graybackground">
           <div class="smallpic">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\information-guest-lecture.jpg">
           </div>
-          <div id="graybackground" class="smallpictext">
+          <div class="smallpictext">
             <h2>Our guest lecture</h2>
             <h3>Join a keynote with Oliver Sack about music in medical treatment</h3>
-            <h3><a href="#">Read more</a></h3>
+            <h3 class="nopadding"><a href="#">Read more</a></h3>
           </div>
         </div>
-
-        </div>
       </div>
+    </div>
+
+
+<!--Courses section-->
 
       <div id="startLearning">
         <h1>Start learning</h1>
         <div id="courses">
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-software.jpg">
             <div class="courseText">
               <h2>Software engineering</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">Web Development, Mobile Development, iOT, APIs</h3>
             </div>
           </div>
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-computer-art.jpg">
             <div class="courseText">
               <h2>Computer art</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
             </div>
           </div>
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-design.jpg">
             <div class="courseText">
               <h2>Design</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">User Experience Design, User Research, Visual Design</h3>
             </div>
           </div>
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-data.jpg">
             <div class="courseText">
               <h2>Data</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">Data Science, Big Data, SQL, Data Visualization</h3>
             </div>
           </div>
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-business.jpg">
             <div class="courseText">
               <h2>Business</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">Product Development, Business Development, Startup</h3>
             </div>
           </div>
-
           <div class="courseDescription">
             <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\course-marketing.jpg">
             <div class="courseText">
               <h2>Marketing</h2>
-              <h3>Courses</h3>
+              <h3 class="courseLabel">Courses</h3>
               <h3 class="bottomText">Analytics, Content Marketing, Mobile Marketing</h3>
             </div>
           </div>
         </div>
       </div>
 
+<!--Thesis Section-->
       <div id="thesis">
-
         <h1>Thesis exhibit</h1>
         <div id="thesisBody">
-
           <div id="videocontainer">
             <video width="100%" height="auto" controls>
               <source src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\thesis.mp4" type="video/mp4">
@@ -163,10 +163,8 @@
             Sed non accumsan urna. Phasellus sed consequat x. Etiam eget magna laoreet, efficitur dolor consequat,
             tristique ligula."</h3>
           </div>
-
           <div class="smallsets">
-
-            <div class="smallcontainer">
+            <div class="smallcontainer graybackground">
                 <div class="smallpic">
                   <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\information-orientation.jpg">
                 </div>
@@ -175,7 +173,6 @@
                   <h3>Designer showcase of new prototype product</h3>
                 </div>
             </div>
-
           <div class="smallcontainer">
             <div class="smallpic">
               <img src="C:\Users\npatsiopoulos\github\ColmarAcademy\Resources\Images\information-campus.jpg">
@@ -185,11 +182,8 @@
               <h3>Research study about New York</h3>
               </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
   </body>
 </html>
