@@ -40,7 +40,7 @@ h4 {
 
 /* header CSS*/
 header {
-  font-family: Roboto;
+  font-family: Arial;
   position: fixed;
   width: 100%;
   height: 4rem;
@@ -71,7 +71,7 @@ header {
 }
 
 #nav {
-  margin-right: 3.125rem;
+  margin-right: 0.5rem;
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
@@ -338,6 +338,10 @@ h3.nopadding {
   background-color: white;
 }
 
+#thesisbody {
+  margin-bottom: 2rem;
+}
+
 #thesis h1 {
   text-align: center;
 }
@@ -359,6 +363,7 @@ h3.nopadding {
 #videocontainer {
   width: 60%;
   margin: 0 1.5rem 0 1.5rem;
+  padding-bottom: 2rem;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -372,4 +377,37 @@ video {
 
 .smallcontainer.graybackground {
   background-color: lightgray;
+}
+
+footer {
+  position: relative;
+  font-family: Arial;
+  font-size: 0.75rem;
+  top: 4rem;
+  height: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  border-top: 1px solid lightgray;
+  background: white;
+}
+
+.copyright {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex: 0 1 100%;
+}
+
+#terms {
+  padding-right: 1.5rem;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 1 100%;
+}
+
+#terms span {
+  padding-right: 1.5rem;
 }
