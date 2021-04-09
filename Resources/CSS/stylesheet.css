@@ -1,7 +1,7 @@
 /*root CSS*/
 html {
   font-family: "Kumbh Sans",sans-serif;
-  color: black;
+  color: #4a4a4a;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -13,27 +13,24 @@ body {
   max-width: 100rem;
   margin: 0 auto;
   float: none;
+  background-color: white;
 }
 
 h1 {
-  color: #4a4a4a;
   font-size: 3rem;
 }
 
 h2 {
-  color: #4a4a4a;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 h3 {
-  color: #4a4a4a;
   font-size: 1rem;
   font-weight: 200;
 }
 
 h4 {
-  color: #4a4a4a;
   font-size: .75rem;
   font-weight: 200;
 }
@@ -125,7 +122,6 @@ header {
 
 #bannertext h1 {
   font-weight: 700;
-  color: #4a4a4a;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   margin-top: 0;
@@ -264,6 +260,11 @@ h3.nopadding {
   margin: 0;
 }
 
+
+img.image_mobile {
+  display: none;
+}
+
 /*Start Learning Section*/
 
 #startLearning {
@@ -390,7 +391,7 @@ footer {
   display: flex;
   align-items: flex-end;
   border-top: 1px solid lightgray;
-  background: white;
+  background-color: white;
 }
 
 .copyright {
@@ -410,4 +411,194 @@ footer {
 
 #terms span {
   padding-right: 1.5rem;
+}
+
+/*Mobile version*/
+
+@media only screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  h4 {
+    font-size: .75rem;
+    font-weight: 200;
+  }
+
+
+
+
+/* Banner CSS */
+
+
+
+  #banner {
+    position: relative;
+    top: 4rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .largepic {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #bannertext {
+    width: 100%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+  }
+
+  .button {
+    align-self: center;
+  }
+
+  .bigpic {
+    display: none;
+  }
+
+  .smallsets {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smallcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smallpic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .smallpic img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+  }
+
+  img.image_full {
+    display: none;
+  }
+
+  img.image_mobile {
+    display: block;
+  }
+
+  .smallpictext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .smallpictext h2 {
+    line-height: 1.3;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .smallpictext h3 {
+    line-height: 1.45;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+
+  #startLearning {
+    position: relative;
+    top: 8rem;
+  }
+
+  .courseDescription {
+    width: 100%;
+    margin: 0 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .courseDescription img {
+    display: none;
+  }
+
+  .courseText h2 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  }
+
+  .courseText h3 {
+    display: none;
+  }
+
+
+
+  #videocontainer {
+    width: 100%;
+  }
+
+  #thesis #videocontainer h2, h3 {
+    display: none;
+  }
+
+
+
+#thesisBody .smallsets {
+    display: none;
+  }
+
+#terms {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
