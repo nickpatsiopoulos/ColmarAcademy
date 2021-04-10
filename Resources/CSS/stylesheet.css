@@ -607,29 +607,11 @@ footer {
 
 
 
-#thesisBody .smallsets {
+  #thesisBody .smallsets {
+    }
+
+  #terms {
     display: none;
   }
-
-#terms {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
