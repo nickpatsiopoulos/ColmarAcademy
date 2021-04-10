@@ -49,6 +49,16 @@ header {
   background-color: white;
 }
 
+.widescreen {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.smallscreen {
+  display: none;
+}
+
 #logo {
   margin: 0 1.5rem;
   display: flex;
@@ -333,7 +343,7 @@ img.image_mobile {
 /*Thesis section*/
 #thesis {
   position: relative;
-  top: 4rem;
+  top: 8rem;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -436,13 +446,26 @@ footer {
     font-weight: 200;
   }
 
+.widescreen {
+  display: none;
+}
+
+.smallscreen {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+/*  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;*/
+  justify-content: space-between;
+/*  flex: 0 1 100%; */
+}
 
 
-
-/* Banner CSS */
-
-
-
+/* Mobile Banner CSS */
   #banner {
     position: relative;
     top: 4rem;
@@ -536,35 +559,43 @@ footer {
     padding: 0.5rem 0;
   }
 
+/* Mobile Start Learning */
+
 
   #startLearning {
     position: relative;
+    box-sizing: border-box;
     top: 8rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+  }
+
+  #startLearning h1 {
+    margin-bottom: 1rem;
   }
 
   .courseDescription {
     width: 100%;
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 1rem 0.5rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background-color: white;
+    background-color: lightgray;
   }
   .courseDescription img {
     display: none;
   }
 
   .courseText h2 {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: 1rem 0 1.5rem 1rem;
   }
 
   .courseText h3 {
     display: none;
   }
 
-
+/*Mobile Thesis CSS*/
 
   #videocontainer {
     width: 100%;
