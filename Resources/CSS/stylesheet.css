@@ -440,11 +440,11 @@ footer {
   and (-webkit-device-pixel-ratio: 2.6) {
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
@@ -454,9 +454,15 @@ footer {
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 200;
   }
+
+/*Pixel 3a Header*/
+
+header {
+  height: 5rem;
+}
 
 .widescreen {
   display: none;
@@ -476,11 +482,15 @@ footer {
 /*  flex: 0 1 100%; */
 }
 
+#calogo {
+  height: 5rem;
+}
+
 
 /* Mobile Banner CSS */
   #banner {
     position: relative;
-    top: 4rem;
+    top: 5rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -567,6 +577,7 @@ footer {
 
   img.image_mobile {
     display: block;
+    width: 100%;
   }
 
   .smallpictext {
