@@ -434,7 +434,9 @@ footer {
 
 /*Mobile version*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), (device-width: 360px)
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
 
   h1 {
     font-size: 2rem;
@@ -599,6 +601,7 @@ footer {
     top: 8rem;
     padding-bottom: 1.5rem;
     background-color: white;
+    border-top: 1px solid lightgray;
   }
 
   #startLearning h1 {
@@ -630,6 +633,11 @@ footer {
 
   #videocontainer {
     width: 100%;
+  }
+
+  #thesis {
+    top: 8rem;
+    border-top: 1px solid lightgray;
   }
 
   #thesis #videocontainer h2, #thesis #videocontainer h3 {
