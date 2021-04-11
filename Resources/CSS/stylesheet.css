@@ -124,6 +124,7 @@ header {
 
 #bannertext {
   width: 35%;
+  max-width: 100%;
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
@@ -139,6 +140,7 @@ header {
 }
 
 #bannertext h2 {
+  max-width: 100%;
   font-weight: 800;
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -434,8 +436,7 @@ footer {
 
 /*Google Pixel3a version*/
 
-@media only screen and /*(max-width: 480px),*/
-  (min-device-width: 412px)
+@media only screen and (min-device-width: 412px)
   and (max-device-width: 847px)
   and (-webkit-device-pixel-ratio: 2.6) {
 
@@ -475,32 +476,19 @@ header {
 }
 
 #logo {
-/*  margin: 0 1.5rem;
-  display: flex;
-  align-items: center;*/
   justify-content: space-between;
-/*  flex: 0 1 100%; */
-}
-
-#calogo {
-  height: 5rem;
 }
 
 
 /* Mobile Banner CSS */
   #banner {
-    position: relative;
-    top: 5rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .largepic {
     width: 100%;
-    overflow: hidden;
   }
 
   .largepic img {
@@ -511,24 +499,17 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
   }
 
   #bannertext h1 {
     margin: 1rem 1rem;
-    max-width: 100%;
   }
 
   #bannertext h2 {
     margin: 1rem 1rem;
-    max-width: 100%;
   }
 
   .button {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 2rem;
     align-self: center;
   }
@@ -538,37 +519,22 @@ header {
   }
 
   .smallsets {
-    position: relative;
     width: 100%;
-    height: auto;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .smallcontainer {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .smallpic {
     width: 100%;
     height: auto;
     max-width: 100%;
-    display: flex;
-    align-items: center;
   }
 
   .smallpic img {
-    display: block;
-    height: auto;
-    max-width: 100%;
     margin: 0.5rem 1rem 0 1rem;
-    align-self: center;
-    object-fit: contain;
   }
 
   img.image_full {
@@ -577,7 +543,6 @@ header {
 
   img.image_mobile {
     display: block;
-    width: 100%;
   }
 
   .smallpictext {
@@ -591,13 +556,10 @@ header {
 
   .smallpictext h2 {
     margin: 0.5rem 1rem 0 1rem;
-    line-height: 1.3;
-    padding-top: 0;
   }
 
   .smallpictext h3 {
     margin: 0.5rem 1rem 0 1rem;
-    line-height: 1.45;
   }
 
   .smallcontainer.graybackground {
@@ -605,7 +567,6 @@ header {
   }
 
 /* Mobile Start Learning */
-
 
   #startLearning {
     position: relative;
@@ -622,7 +583,7 @@ header {
 
   .courseDescription {
     width: 100%;
-    margin: 0 1rem 0.5rem 1rem;
+    margin: 0rem 1rem 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -665,7 +626,6 @@ header {
   #terms {
     display: none;
   }
-
 }
 
 
@@ -703,28 +663,19 @@ header {
 }
 
 #logo {
-/*  margin: 0 1.5rem;
-  display: flex;
-  align-items: center;*/
   justify-content: space-between;
-/*  flex: 0 1 100%; */
 }
 
 
 /* Mobile Banner CSS */
   #banner {
-    position: relative;
-    top: 4rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .largepic {
     width: 100%;
-    overflow: hidden;
   }
 
   .largepic img {
@@ -735,24 +686,17 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
   }
 
   #bannertext h1 {
     margin: 1rem 1rem;
-    max-width: 100%;
   }
 
   #bannertext h2 {
     margin: 1rem 1rem;
-    max-width: 100%;
   }
 
   .button {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 2rem;
     align-self: center;
   }
@@ -762,37 +706,22 @@ header {
   }
 
   .smallsets {
-    position: relative;
     width: 100%;
-    height: auto;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .smallcontainer {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .smallpic {
     width: 100%;
     height: auto;
     max-width: 100%;
-    display: flex;
-    align-items: center;
   }
 
   .smallpic img {
-    display: block;
-    height: auto;
-    max-width: 100%;
     margin: 0.5rem 1rem 0 1rem;
-    align-self: center;
-    object-fit: contain;
   }
 
   img.image_full {
@@ -814,13 +743,10 @@ header {
 
   .smallpictext h2 {
     margin: 0.5rem 1rem 0 1rem;
-    line-height: 1.3;
-    padding-top: 0;
   }
 
   .smallpictext h3 {
     margin: 0.5rem 1rem 0 1rem;
-    line-height: 1.45;
   }
 
   .smallcontainer.graybackground {
@@ -828,7 +754,6 @@ header {
   }
 
 /* Mobile Start Learning */
-
 
   #startLearning {
     position: relative;
@@ -845,7 +770,7 @@ header {
 
   .courseDescription {
     width: 100%;
-    margin: 0 1rem 0.5rem 1rem;
+    margin: 0rem 1rem 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -888,5 +813,4 @@ header {
   #terms {
     display: none;
   }
-
 }
