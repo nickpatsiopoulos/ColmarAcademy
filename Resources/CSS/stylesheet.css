@@ -434,12 +434,12 @@ footer {
 
 /*Mobile version*/
 
-@media only screen and (max-width: 480px),
+@media only screen and /*(max-width: 480px),*/
   (min-device-width: 412px)
   and (max-device-width: 847px)
   and (-webkit-device-pixel-ratio: 2.6) {
 
-  h1 {
+/*  h1 {
     font-size: 2rem;
   }
 
@@ -455,7 +455,7 @@ footer {
 
   h4 {
     font-size: .75rem;
-    font-weight: 200;
+    font-weight: 200; */
   }
 
 .widescreen {
