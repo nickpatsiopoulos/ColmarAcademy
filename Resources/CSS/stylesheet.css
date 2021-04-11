@@ -432,14 +432,237 @@ footer {
   text-decoration: none;
 }
 
-/*Mobile version*/
+/*Google Pixel3a version*/
 
 @media only screen and /*(max-width: 480px),*/
   (min-device-width: 412px)
   and (max-device-width: 847px)
   and (-webkit-device-pixel-ratio: 2.6) {
 
-/*  h1 {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+.widescreen {
+  display: none;
+}
+
+.smallscreen {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+/*  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;*/
+  justify-content: space-between;
+/*  flex: 0 1 100%; */
+}
+
+
+/* Mobile Banner CSS */
+  #banner {
+    position: relative;
+    top: 4rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .largepic {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .largepic img {
+    margin: 0;
+  }
+
+  #bannertext {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+  }
+
+  #bannertext h1 {
+    margin: 1rem 1rem;
+    max-width: 100%;
+  }
+
+  #bannertext h2 {
+    margin: 1rem 1rem;
+    max-width: 100%;
+  }
+
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
+  .bigpic {
+    display: none;
+  }
+
+  .smallsets {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smallcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smallpic {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .smallpic img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0.5rem 1rem 0 1rem;
+    align-self: center;
+    object-fit: contain;
+  }
+
+  img.image_full {
+    display: none;
+  }
+
+  img.image_mobile {
+    display: block;
+  }
+
+  .smallpictext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .smallpictext h2 {
+    margin: 0.5rem 1rem 0 1rem;
+    line-height: 1.3;
+    padding-top: 0;
+  }
+
+  .smallpictext h3 {
+    margin: 0.5rem 1rem 0 1rem;
+    line-height: 1.45;
+  }
+
+  .smallcontainer.graybackground {
+    background-color: white;
+  }
+
+/* Mobile Start Learning */
+
+
+  #startLearning {
+    position: relative;
+    box-sizing: border-box;
+    top: 8rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    border-top: 1px solid lightgray;
+  }
+
+  #startLearning h1 {
+    margin-bottom: 1rem;
+  }
+
+  .courseDescription {
+    width: 100%;
+    margin: 0 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: lightgray;
+  }
+  .courseDescription img {
+    display: none;
+  }
+
+  .courseText h2 {
+  padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .courseText h3 {
+    display: none;
+  }
+
+/*Mobile Thesis CSS*/
+
+  #videocontainer {
+    width: 100%;
+  }
+
+  #thesis {
+    top: 8rem;
+    border-top: 1px solid lightgray;
+  }
+
+  #thesis #videocontainer h2, #thesis #videocontainer h3 {
+    display: none;
+  }
+
+  #thesisBody .smallsets {
+    display: none;
+    }
+
+/* Mobile Footer */
+
+  #terms {
+    display: none;
+  }
+
+}
+
+
+/*Narrow screen version*/
+
+@media only screen and (max-width: 480px) {
+
+  h1 {
     font-size: 2rem;
   }
 
@@ -455,7 +678,7 @@ footer {
 
   h4 {
     font-size: .75rem;
-    font-weight: 200; */
+    font-weight: 200;
   }
 
 .widescreen {
