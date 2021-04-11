@@ -434,8 +434,8 @@ footer {
 
 /*Mobile version*/
 
-@media only screen and (max-width: 480px), (device-width: 360px)
-  and (device-height: 640px) 
+@media only screen and (max-width: 5000px), (device-width: 360px)
+  and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3) {
 
   h1 {
