@@ -480,6 +480,10 @@ header {
   justify-content: space-between;
 }
 
+#calogo {
+  height: 2.5rem;
+}
+
 
 /* Mobile Banner CSS */
   #banner {
@@ -675,6 +679,10 @@ header {
 
 #logo {
   justify-content: space-between;
+}
+
+#calogo {
+  height: 2.5rem;
 }
 
 
