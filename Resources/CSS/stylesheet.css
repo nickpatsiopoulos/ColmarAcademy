@@ -436,13 +436,12 @@ footer {
 
 /*Google Pixel3a version*/
 
-@media only screen and (min-device-width: 412px)
-  and (max-device-width: 847px)
-  and (min-resolution: 350dpi)
-  and (min-resolution: 600dpi) {
+@media only screen and (min-resolution: 3dppx),
+(-webkit-min-device-pixel-ratio: 3) {
 
   h1 {
     font-size: 3rem;
+    color: red;
   }
 
   h2 {
@@ -512,6 +511,10 @@ header {
 
   #bannertext h2 {
     margin: 1rem 1rem;
+  }
+
+  #bannertext .button {
+    width: 15rem;
   }
 
   .button {
